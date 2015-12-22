@@ -3,3 +3,18 @@ layout : default
 title : ma page
 ---
 
+<!-- Page Content -->
+<div class="container">
+
+        <!-- Marketing Icons Section -->
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">
+                 Entrainement Jekyl
+            </h1>
+        </div>
+        {% for post in paginator.posts %}
+            {{ post.content }}
+        {% endfor %}
+    </div>
+</div>
