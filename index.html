@@ -33,7 +33,9 @@ title : ma page
             {% for post in paginator.posts %}
             <div class="col-md-4 col-sm-6">
                 <a href="portfolio-item.html">
-                    {{ post.image }}
+                   {{ post.excerpt }}
+                   {% assign image = page.images[0] %}
+                   {% include image.html image=image %}
                 </a>
             </div>
             {% endfor %}
