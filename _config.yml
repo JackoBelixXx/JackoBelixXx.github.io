@@ -1,5 +1,5 @@
 paginate : 3
-
+gems : - jekyll-auto-image
 
 
 

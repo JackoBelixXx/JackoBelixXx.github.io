@@ -9,7 +9,7 @@ title : ma page
     <div class="row">
         <div class="col-lg-12">
             <h1 class="page-header">
-                 BIENVENUE SUR MON PORTFOLIO EN LIGNE
+                 Bienvenue, Welcome, Willkommen
             </h1>
         </div>
         {% for post in paginator.posts %}
@@ -25,5 +25,18 @@ title : ma page
                 </div>
             </div>
         {% endfor %}
+        
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="page-header">Mon Portfolio</h2>
+            </div>
+            {% for post in paginator.posts %}
+            <div class="col-md-4 col-sm-6">
+                <a href="portfolio-item.html">
+                    <img class="img-responsive img-portfolio img-hover" src="{{ post.image }}" alt="">
+                </a>
+            </div>
+            {% endfor %}
+        </div>
     </div>
 </div>
